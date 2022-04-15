@@ -1,3 +1,6 @@
+# @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjUwMDc2MDc2fQ.HhWgGSWxo12UVNnOp9_fSHQLM7C43lOdaX-THjAoVMc
+
+
 ### Pokemon Index
 GET http://localhost:3000/pokemon
 Content-Type: application/json
