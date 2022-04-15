@@ -1,0 +1,47 @@
+### Pokemon Index
+GET http://localhost:3000/pokemon
+Content-Type: application/json
+### Pokemon Create
+POST http://localhost:3000/pokemon
+Content-Type: application/json
+
+{
+"name": "meeeeep",
+"pokemon_type": "test",
+"species": "test",
+"height": "test",
+"weight": "188.5 lbs",
+"hp": "79",
+"attack": "83",
+"defense": "100",
+"spec_attack": "85",
+"spec_defense": "105",
+"speed": "78",
+"total": "530"
+}
+
+### Pokemon Show
+GET http://localhost:3000/pokemon/1
+Content-Type: application/json
+### Pokemon Update
+PATCH http://localhost:3000/pokemon/5
+Content-Type: application/json
+
+{
+"name": "Snorlax",
+"pokemon_type": "Normal",
+"species": "Sleeping Pokemon",
+"height": "6'11",
+"weight": "1014.1 lbs",
+"hp": "160",
+"attack": "110",
+"defense": "65",
+"spec_attack": "65",
+"spec_defense": "110",
+"speed": "30",
+"total": "540"
+}
+
+### Pokemon Destroy
+DELETE http://localhost:3000/pokemon/6
+Content-Type: application/json

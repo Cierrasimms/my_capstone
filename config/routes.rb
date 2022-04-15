@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/pokemon" => "pokemons#index"
+  post "/pokemon" => "pokemons#create"
+  get "/pokemon/:id" => "pokemons#show"
+  patch "/pokemon/:id" => "pokemons#update"
+  delete "/pokemon/:id" => "pokemons#destroy"
 end
