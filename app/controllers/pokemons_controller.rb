@@ -26,6 +26,7 @@ class PokemonsController < ApplicationController
   def show
     pokemon = Pokemon.find_by(id: params[:id])
     render json: pokemon.as_json
+    puts "DEBUG: this is Pokemon #{pokemon.id}"
   end
 
   def update
