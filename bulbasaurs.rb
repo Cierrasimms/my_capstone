@@ -1,6 +1,6 @@
-class CampaignController < ApplicationController
+require 'rubygems'
+require 'twilio-ruby'
 
-def create
 account_sid = ENV['TWILIO_ACCOUNT_SID']
 auth_token = ENV['TWILIO_AUTH_TOKEN']
 @client = Twilio::REST::Client.new(account_sid, auth_token)
@@ -11,5 +11,5 @@ message = @client.messages
      messaging_service_sid: 'MG605b9aee01f2f791483f59be84e32352',
      to: '+14232234724'
    )
-end
-end
+
+puts message.sid

@@ -10,4 +10,10 @@ Rails.application.routes.draw do
 
   ### Sessions
   post "/sessions" => "sessions#create"
+
+  get "/team" => "team#index"
+
+  post "/team" => "team#create"
+
+  delete "/team/:id" => "team#destroy"
 end

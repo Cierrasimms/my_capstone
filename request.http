@@ -68,3 +68,7 @@ Content-Type: application/json
   "email": "test1234@test.com",
   "password": "password"
 }
+
+### Team delete
+
+DELETE http://localhost:3000/team/7
